@@ -43,6 +43,7 @@ function getData(input) {
                 resultDisplay.appendChild(synonyms);
                 resultDisplay.style.display = "revert"
                 document.getElementById("wordInput").value = result.word;
+                document.title="Search: " + result.word
             }
         })
         .catch(function(error){
@@ -50,6 +51,7 @@ function getData(input) {
             "<h1 style='text-align:center;font-size:100px;'>404</h1>"+
             "<p style='text-align:center;'>Cannot find the word: "+input+" !</p>"
             document.getElementById("resultDisplay").style.display = "revert"
+            document.title="Error!"
         })
 
 }
