@@ -1,0 +1,39 @@
+body{
+    background-color:white;
+    font-family:arial;
+    margin:0
+}
+input:focus{
+    outline:none;
+}
+.TopInput{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    background-color:blue;
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:40px;
+}
+#resultDisplay{
+    padding:20px;
+    margin:0 auto;
+    width:80vw;
+    background-color:skyblue;
+}
+#wordInput{
+    border-width:0px;
+    border-radius:0px;
+    background-color:white;
+}
+#SearchWordBTN{
+    background-color:lightgray;
+    border-width:0px;
+    border-radius:0px;
+}
+#SearchWordBTN:active{
+    background-color:revert;
+    
+}
