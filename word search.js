@@ -33,7 +33,7 @@ function getData(input) {
                 var definitionsList = document.createElement("ol")
                 for (var i = 0; i < result.meanings[ia].definitions.length; i++) {
                     var deItem = document.createElement("li")
-                    deItem.innerHTML = result.meanings[ia].definitions[i].definition + "<br>" + "Example: " + ((result.meanings[ia].definitions[i].example) || "No Example") + "<br><br>";
+                    deItem.innerHTML = result.meanings[ia].definitions[i].definition;
                     definitionsList.appendChild(deItem);
 
                 }
